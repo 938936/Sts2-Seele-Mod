@@ -1,0 +1,8 @@
+{
+  "SELEE-TONG_YAO.description": "战斗开始时，获得{Amount:diff()}层[gold]量子叠加[/gold]",
+  "SELEE-TONG_YAO.flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
+  "SELEE-TONG_YAO.title": "童谣",
+  "SELEE-ZHUO_HAI_ZHI_RUI.description": "前三个回合开始时，分别获得4、3、2层[gold]量子叠加[/gold]",
+  "SELEE-ZHUO_HAI_ZHI_RUI.flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
+  "SELEE-ZHUO_HAI_ZHI_RUI.title": "濯海之蕊"
+}

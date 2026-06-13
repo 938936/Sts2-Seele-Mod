@@ -1,0 +1,10 @@
+{
+  "SELEE-DIEJIA.description": "持有[gold]量子叠加[/gold]状态时生效，生效后失去一层[gold]量子叠加[/gold]状态",
+  "SELEE-DIEJIA.title": "叠加",
+  "SELEE-DIEJIAX.description": "持有至少X层[gold]量子叠加[/gold]状态时生效，生效后失去X层[gold]量子叠加[/gold]状态",
+  "SELEE-DIEJIAX.title": "叠加X",
+  "SELEE-GONGMING.description": "持有[gold]简并动能[/gold]时触发效果",
+  "SELEE-GONGMING.title": "共鸣",
+  "SELEE-XINGHUANBAOFA.description": "[gold]星环能级[/gold]达到100时进入[gold]星环爆发[/gold]状态并清除[gold]星环能级[/gold]，[gold]星环爆发[/gold]状态持续3回合，持续期间内发动共鸣攻击时抽1张牌。\n进入[gold]星环爆发[/gold]状态时获得6层[gold]简并动能[/gold]，打出攻击牌视为发动[gold]共鸣[/gold]攻击，消耗一层[gold]简并动能[/gold]并使造成的伤害增加100%\n在消耗所有[gold]简并动能[/gold]或持续时间结束时退出[gold]星环爆发[/gold]状态，退出时清除所有[gold]简并动能[/gold]。\n[gold]星环爆发[/gold]状态下再次进入[gold]星环爆发[/gold]状态时，使持续时间叠加并获得4层[gold]简并动能[/gold]。",
+  "SELEE-XINGHUANBAOFA.title": "星环爆发"
+}

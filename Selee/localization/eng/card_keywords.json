@@ -1,0 +1,8 @@
+{
+  "SELEE-DIEJIA.description": "Active while having [gold]Quantum Superposition[/gold]. Loses 1 [gold]Quantum Superposition[/gold] when triggered.",
+  "SELEE-DIEJIA.title": "Superposition",
+  "SELEE-GONGMING.description": "Triggers while having [gold]Degeneracy Kinetic[/gold].",
+  "SELEE-GONGMING.title": "Resonance",
+  "SELEE-XINGHUANBAOFA.description": "When [gold]Ring Energy Level[/gold] reaches 100, enter [gold]Ring Burst[/gold] state and clear [gold]Ring Energy Level[/gold]. [gold]Ring Burst[/gold] lasts 2 turns.\nUpon entering [gold]Ring Burst[/gold], gain 6 [gold]Degeneracy Kinetic[/gold]. Attack cards are treated as [gold]Resonance[/gold] attacks, consuming 1 [gold]Degeneracy Kinetic[/gold] and increasing damage by 100%.\nWhen all [gold]Degeneracy Kinetic[/gold] is consumed or the duration ends, exit [gold]Ring Burst[/gold] state and clear all [gold]Degeneracy Kinetic[/gold].\nRe-entering [gold]Ring Burst[/gold] while active extends duration by 2 turns and grants 4 [gold]Degeneracy Kinetic[/gold].",
+  "SELEE-XINGHUANBAOFA.title": "Ring Burst"
+}

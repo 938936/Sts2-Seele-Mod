@@ -1,0 +1,16 @@
+{
+  "SELEE-SELEE.aromaPrinciple": "Lore",
+  "SELEE-SELEE.banter.alive.endTurnPing": "快点，该回家睡觉啦。",
+  "SELEE-SELEE.banter.dead.endTurnPing": "...",
+  "SELEE-SELEE.cardsModifierDescription": "__ cards will now appear in rewards and shops.",
+  "SELEE-SELEE.cardsModifierTitle": "__ Cards",
+  "SELEE-SELEE.description": "天命医疗队长希儿·芙乐艾",
+  "SELEE-SELEE.eventDeathPrevention": "Co-op survival line",
+  "SELEE-SELEE.goldMonologue": "Line spoken when obtaining a large amount of gold",
+  "SELEE-SELEE.possessiveAdjective": "his/her/its",
+  "SELEE-SELEE.pronounObject": "him/her/it",
+  "SELEE-SELEE.pronounPossessive": "his/hers/its",
+  "SELEE-SELEE.pronounSubject": "he/she/it",
+  "SELEE-SELEE.title": "希儿",
+  "SELEE-SELEE.titleObject": "希儿"
+}
