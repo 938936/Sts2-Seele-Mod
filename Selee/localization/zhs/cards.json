@@ -30,7 +30,7 @@
   "SELEE-LIANG_ZI_QU_TI.title": "量子躯体",
   "SELEE-LIANG_ZI_QU_TI.description": "触发[gold]叠加[/gold]效果时，获得{LiangZiQuTiPower:diff()}点[gold]格挡[/gold]。",
   "SELEE-LIANG_ZI_XING_TAI.title": "量子形态",
-  "SELEE-LIANG_ZI_XING_TAI.description": "回合开始时，获得｛LiangZiXingTaiPower:diff()｝层[gold]量子叠加[/gold]。\n每回合首次触发[gold]叠加[/gold]效果时，抽｛LiangZiXingTaiPower:diff()｝张牌。",
+  "SELEE-LIANG_ZI_XING_TAI.description": "回合开始时，获得{LiangZiXingTaiPower:diff()}层[gold]量子叠加[/gold]。\n每回合首次触发[gold]叠加[/gold]效果时，抽{LiangZiXingTaiPower:diff()}张牌。",
   "SELEE-XING_HUAN_XI_JI.title": "星环吸积",
   "SELEE-XING_HUAN_XI_JI.description": "获得{XingHuanNengJiPower:diff()}层[gold]星环能级[/gold]。",
   "SELEE-XING_RU_DAO_GE.title": "行如刀割",
