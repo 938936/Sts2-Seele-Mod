@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Selee.SeleeCode.Cards;
 
@@ -14,14 +15,18 @@ public class LiangZiXingTai() : SeleeCard(3, CardType.Power, CardRarity.Rare, Ta
     public override IEnumerable<CardKeyword> CanonicalKeywords => [SeleeCardKeyword.DieJia];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<LiangZiDieJiaPower>()];
+    
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new PowerVar<LiangZiXingTaiPower>(2),
+    ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<LiangZiXingTaiPower>(choiceContext, base.Owner.Creature, 2, base.Owner.Creature, this);
+        await PowerCmd.Apply<LiangZiXingTaiPower>(choiceContext, base.Owner.Creature, DynamicVars["LiangZiXingTaiPower"].BaseValue, base.Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-        AddKeyword(CardKeyword.Retain);
+        DynamicVars["LiangZiXingTaiPower"].UpgradeValueBy(1m);
     }
 }
