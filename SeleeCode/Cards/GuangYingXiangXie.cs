@@ -21,6 +21,7 @@ public class GuangYingXiangXie() : SeleeCard(0, CardType.Skill, CardRarity.Uncom
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new EnergyVar(2),
+        new DynamicVar("DieJiaCount",2m)
     ];
 
     protected override bool ShouldGlowGoldInternal =>
@@ -35,7 +36,8 @@ public class GuangYingXiangXie() : SeleeCard(0, CardType.Skill, CardRarity.Uncom
             await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, base.Owner);
             var luoYing = base.CombatState!.CreateCard<LuoYing>(base.Owner);
             await CardPileCmd.AddGeneratedCardToCombat(luoYing, PileType.Draw, base.Owner, CardPilePosition.Random);
-            await PowerCmd.Decrement(dieJiaPower);
+            //先减少X-1层，然后触发Hook再减少一层
+            await PowerCmd.ModifyAmount(choiceContext,dieJiaPower , 1-DynamicVars["DieJiaCount"].BaseValue, Owner.Creature, this);
             await SeleeHook.AfterDieJiaTrigger(Owner, this);
         }
     }

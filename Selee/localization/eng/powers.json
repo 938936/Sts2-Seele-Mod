@@ -85,5 +85,8 @@
   "SELEE-HENG_CHANG_SHI_YUAN_POWER.smartDescription": "While in [gold]Ring Burst[/gold] state, every 3 [gold]Resonance[/gold] attacks, gain {energyPrefix:energyIcons(1)}. [blue]{Amount}[/blue] more attacks needed.",
   "SELEE-XUE_DING_E_DE_XI_ER_POWER.title": "Schrödinger's Seele",
   "SELEE-XUE_DING_E_DE_XI_ER_POWER.description": "Every 4 HP lost, gain 1 Quantum Superposition. (X more HP lost needed)",
-  "SELEE-XUE_DING_E_DE_XI_ER_POWER.smartDescription": "Every 4 HP lost, gain 1 [gold]Quantum Superposition[/gold]. [blue]{Amount}[/blue] more HP lost needed."
+  "SELEE-XUE_DING_E_DE_XI_ER_POWER.smartDescription": "Every 4 HP lost, gain 1 [gold]Quantum Superposition[/gold]. [blue]{Amount}[/blue] more HP lost needed.",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.title": "Day=Night",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.description": "When Superposition effect triggers, draw 1 card.",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.smartDescription": "When [gold]Superposition[/gold] effect triggers, draw [blue]{Amount}[/blue] cards."
 }

@@ -31,9 +31,9 @@ public class QingQuanDiYu() : SeleeCard(1, CardType.Skill, CardRarity.Uncommon, 
             source: this)).FirstOrDefault();
         if (selectedCard != null)
         {
-            await CardCmd.Exhaust(choiceContext, selectedCard);
-            await PowerCmd.Apply<YuHePower>(choiceContext, base.Owner.Creature, DynamicVars["YuHePower"].BaseValue, base.Owner.Creature, this);
+            await CardCmd.Exhaust(choiceContext, selectedCard); 
         }
+        await PowerCmd.Apply<YuHePower>(choiceContext, base.Owner.Creature, DynamicVars["YuHePower"].BaseValue, base.Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

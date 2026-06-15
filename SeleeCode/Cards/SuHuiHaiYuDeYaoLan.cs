@@ -24,6 +24,7 @@ public class SuHuiHaiYuDeYaoLan() : SeleeCard(0, CardType.Attack, CardRarity.Rar
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(20m, ValueProp.Move),
         new DynamicVar("NengJiPerDongNeng", 10m),
+        new CardsVar(1)
     ];
 
     protected override bool IsPlayable =>
@@ -52,9 +53,8 @@ public class SuHuiHaiYuDeYaoLan() : SeleeCard(0, CardType.Attack, CardRarity.Rar
             dongNengAmount = 0;
             await SeleeHook.AfterGongMingTrigger(base.Owner, this);
             await PowerCmd.Apply<XingHuanNengJiPower>(choiceContext, base.Owner.Creature, nengJiGain, base.Owner.Creature, this);
+            await CardPileCmd.Draw(choiceContext, dongNengAmount * DynamicVars.Cards.IntValue, Owner);
         }
-
-
     }
     protected override void OnUpgrade()
     {

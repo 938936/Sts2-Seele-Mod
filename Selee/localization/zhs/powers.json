@@ -85,5 +85,8 @@
   "SELEE-HENG_CHANG_SHI_YUAN_POWER.smartDescription": "[gold]星环爆发[/gold]状态下，每发动3次[gold]共鸣[/gold]攻击，获得{energyPrefix:energyIcons(1)}。再发动[blue]{Amount}[/blue]次可获得。",
   "SELEE-XUE_DING_E_DE_XI_ER_POWER.title": "薛定谔的希儿",
   "SELEE-XUE_DING_E_DE_XI_ER_POWER.description": "每失去4点生命值，获得1层量子叠加。（再失去X点可获得）",
-  "SELEE-XUE_DING_E_DE_XI_ER_POWER.smartDescription": "每失去4点生命值，获得1层[gold]量子叠加[/gold]。再失去[blue]{Amount}[/blue]点可获得。"
+  "SELEE-XUE_DING_E_DE_XI_ER_POWER.smartDescription": "每失去4点生命值，获得1层[gold]量子叠加[/gold]。再失去[blue]{Amount}[/blue]点可获得。",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.title": "白昼=黑夜",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.description": "触发叠加效果时，抽1张牌。",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.smartDescription": "触发[gold]叠加[/gold]效果时，抽[blue]{Amount}[/blue]张牌。"
 }

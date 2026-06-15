@@ -112,7 +112,7 @@
   "SELEE-WEI_GUANG_MENG_XIN.title": "微光蒙心",
   "SELEE-WEI_GUANG_MENG_XIN.description": "获得{YuHeMultiplier:diff()}X层[gold]愈合[/gold]。\n对所有敌人施加{IfUpgraded:show:X+1|X}层[gold]虚弱[/gold]。",
   "SELEE-SU_HUI_HAI_YU_DE_YAO_LAN.title": "溯洄海语的摇篮",
-  "SELEE-SU_HUI_HAI_YU_DE_YAO_LAN.description": "处于[gold]星环爆发[/gold]状态下才可以打出\n对所有敌人造成{Damage:diff()}点伤害\n结束[gold]星环爆发[/gold]状态，结束前每剩余一层[gold]简并动能[/gold]，获得{NengJiPerDongNeng:diff()}层[gold]星环能级[/gold]",
+  "SELEE-SU_HUI_HAI_YU_DE_YAO_LAN.description": "处于[gold]星环爆发[/gold]状态下才可以打出\n对所有敌人造成{Damage:diff()}点伤害\n结束[gold]星环爆发[/gold]状态，结束前每剩余一层[gold]简并动能[/gold]，获得{NengJiPerDongNeng:diff()}层[gold]星环能级[/gold]并抽[blue]{Cards:diff()}[/blue]张牌",
   "SELEE-CHU_XING_XIN_YA.title": "初醒新芽",
   "SELEE-CHU_XING_XIN_YA.description": "获得{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]\n获得{Energy:energyIcons()}\n获得{YuHePower:diff()}层[gold]愈合[/gold]\n获得{XingHuanNengJiPower:diff()}层[gold]星环能级[/gold]\n每回合开始时，失去{ChuXingXinYaPower:diff()}点生命值",
   "SELEE-HUA_XU_WEI_SHI.title": "化虚为实",
@@ -126,7 +126,7 @@
   "SELEE-AI_V_PIN_DAO.title": "爱v频道",
   "SELEE-AI_V_PIN_DAO.description": "移除目标的[gold]格挡[/gold]。\n施加相当于玩家数量的[gold]量子坍缩[/gold]。",
   "SELEE-QING_BAO_JIAO_YI.title": "情报交易",
-  "SELEE-QING_BAO_JIAO_YI.description": "使另一名玩家获得{Block:diff()}点[gold]格挡[/gold]。\n[gold]叠加[/gold]：额外给予{DieJiaBlock:diff()}点[gold]格挡[/gold]。\n[gold]共鸣[/gold]：目标玩家获得{GongMingJianBingDongNengPower:diff()}层[gold]简并动能[/gold]。",
+  "SELEE-QING_BAO_JIAO_YI.description": "使另一名玩家获得{CalculatedBlock:diff()}点[gold]格挡[/gold]。\n[gold]叠加[/gold]：额外给予{CalculationExtra:diff()}点[gold]格挡[/gold]。\n[gold]共鸣[/gold]：目标玩家获得{GongMingJianBingDongNengPower:diff()}层[gold]简并动能[/gold]。",
   "SELEE-GAN_LIN_HUI_XIANG.title": "甘霖回响",
   "SELEE-GAN_LIN_HUI_XIANG.description": "造成{Damage:diff()}点伤害。\n[gold]共鸣[/gold]：打出后返回手牌。",
   "SELEE-SHEN_FEN_HU_HUAN.title": "身份互换",
@@ -154,5 +154,9 @@
   "SELEE-HENG_CHANG_SHI_YUAN.title": "恒常誓愿",
   "SELEE-HENG_CHANG_SHI_YUAN.description": "[gold]星环爆发[/gold]状态下，每发动{HengChangShiYuanPower:diff()}次[gold]共鸣[/gold]攻击，获得{energyPrefix:energyIcons(1)}。",
   "SELEE-XUE_DING_E_DE_XI_ER.title": "薛定谔的希儿",
-  "SELEE-XUE_DING_E_DE_XI_ER.description": "每失去{XueDingEDeXiErPower:diff()}点生命值，获得1层[gold]量子叠加[/gold]。"
+  "SELEE-XUE_DING_E_DE_XI_ER.description": "每失去{XueDingEDeXiErPower:diff()}点生命值，获得1层[gold]量子叠加[/gold]。",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.title": "白昼=黑夜",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.description": "触发[gold]叠加[/gold]效果时，抽{BaiZhouDengYuHeiYePower:diff()}张牌。",
+  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.title": "如细雨，静润不辍",
+  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.description": "消耗所有非攻击牌。\n每消耗一张，对随机敌人造成{Damage:diff()}点伤害1次，并获得{YuHePower:diff()}层[gold]愈合[/gold]。"
 }

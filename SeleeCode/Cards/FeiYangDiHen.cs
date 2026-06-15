@@ -17,7 +17,7 @@ public class FeiYangDiHen() : SeleeCard(3, CardType.Attack, CardRarity.Uncommon,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [SeleeCardKeyword.GongMing];
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(6m, ValueProp.Move),
+        new DamageVar(7m, ValueProp.Move),
         new DynamicVar("HitCount", 3m),
     ];
 

@@ -126,7 +126,7 @@
   "SELEE-AI_V_PIN_DAO.title": "Love V Channel",
   "SELEE-AI_V_PIN_DAO.description": "Remove target's [gold]Block[/gold].\nApply [gold]Quantum Collapse[/gold] equal to the number of players.",
   "SELEE-QING_BAO_JIAO_YI.title": "Intel Trade",
-  "SELEE-QING_BAO_JIAO_YI.description": "Give another player {Block:diff()} [gold]Block[/gold].\n[gold]Superposition[/gold]: Give {DieJiaBlock:diff()} additional [gold]Block[/gold].\n[gold]Resonance[/gold]: Target player gains {GongMingJianBingDongNengPower:diff()} [gold]Degeneracy Kinetic[/gold].",
+  "SELEE-QING_BAO_JIAO_YI.description": "Give another player {CalculatedBlock:diff()} [gold]Block[/gold].\n[gold]Superposition[/gold]: Give {CalculationExtra:diff()} additional [gold]Block[/gold].\n[gold]Resonance[/gold]: Target player gains {GongMingJianBingDongNengPower:diff()} [gold]Degeneracy Kinetic[/gold].",
   "SELEE-GAN_LIN_HUI_XIANG.title": "Sweet Rain Echo",
   "SELEE-GAN_LIN_HUI_XIANG.description": "Deal {Damage:diff()} damage.\n[gold]Resonance[/gold]: Return to hand after played.",
   "SELEE-SHEN_FEN_HU_HUAN.title": "Identity Swap",
@@ -152,5 +152,9 @@
   "SELEE-HENG_CHANG_SHI_YUAN.title": "Eternal Vow",
   "SELEE-HENG_CHANG_SHI_YUAN.description": "While in [gold]Ring Burst[/gold] state, every {HengChangShiYuanPower:diff()} [gold]Resonance[/gold] attacks, gain {energyPrefix:energyIcons(1)}.",
   "SELEE-XUE_DING_E_DE_XI_ER.title": "Schrödinger's Seele",
-  "SELEE-XUE_DING_E_DE_XI_ER.description": "Every {XueDingEDeXiErPower:diff()} HP lost, gain 1 [gold]Quantum Superposition[/gold]."
+  "SELEE-XUE_DING_E_DE_XI_ER.description": "Every {XueDingEDeXiErPower:diff()} HP lost, gain 1 [gold]Quantum Superposition[/gold].",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.title": "Day=Night",
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.description": "When [gold]Superposition[/gold] effect triggers, draw {BaiZhouDengYuHeiYePower:diff()} card.",
+  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.title": "Like Gentle Rain, Endlessly Nourishing",
+  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.description": "Exhaust all non-Attack cards.\nFor each card Exhausted, deal {Damage:diff()} damage to a random enemy 1 time and gain {YuHePower:diff()} [gold]Heal[/gold]."
 }
