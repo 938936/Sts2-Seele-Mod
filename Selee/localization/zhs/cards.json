@@ -158,5 +158,12 @@
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.title": "白昼=黑夜",
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.description": "触发[gold]叠加[/gold]效果时，抽{BaiZhouDengYuHeiYePower:diff()}张牌。",
   "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.title": "如细雨，静润不辍",
-  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.description": "消耗所有非攻击牌。\n每消耗一张，对随机敌人造成{Damage:diff()}点伤害1次，并获得{YuHePower:diff()}层[gold]愈合[/gold]。"
+  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.description": "消耗所有非攻击牌。\n每消耗一张，对随机敌人造成{Damage:diff()}点伤害1次，并获得{YuHePower:diff()}层[gold]愈合[/gold]。",
+  "SELEE-HUAN_YING_ZHI_LIAN.title": "幻影之镰",
+  "SELEE-HUAN_YING_ZHI_LIAN.description": "造成{Damage:diff()}点伤害。\n获得{Block:diff()}点[gold]格挡[/gold]。\n[gold]叠加[/gold]：伤害和格挡值额外+{DamageExtra:diff()}",
+  "SELEE-X10_SHI_YAN.title": "X-10实验",
+  "SELEE-X10_SHI_YAN.description": "获得{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。\n打出抽牌堆的{Cards:diff()}张牌。\n回合开始时，失去{X10ShiYanPower:diff()}层[gold]量子叠加[/gold]，否则少抽{X10ShiYanPower:diff()}张牌。",
+  "SELEE-X10_SHI_YAN.selectionScreenPrompt": "选择最多{Cards:diff()}张牌打出",
+  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.title": "罪罚两断之刃",
+  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.description": "造成{Damage:diff()}点伤害。\n若目标持有[gold]量子坍缩[/gold]状态，获得{Energy:energyIcons()}和{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。"
 }

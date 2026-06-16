@@ -156,5 +156,12 @@
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.title": "Day=Night",
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE.description": "When [gold]Superposition[/gold] effect triggers, draw {BaiZhouDengYuHeiYePower:diff()} card.",
   "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.title": "Like Gentle Rain, Endlessly Nourishing",
-  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.description": "Exhaust all non-Attack cards.\nFor each card Exhausted, deal {Damage:diff()} damage to a random enemy 1 time and gain {YuHePower:diff()} [gold]Heal[/gold]."
+  "SELEE-RU_XI_YU_JING_RUN_BU_CHUO.description": "Exhaust all non-Attack cards.\nFor each card Exhausted, deal {Damage:diff()} damage to a random enemy 1 time and gain {YuHePower:diff()} [gold]Heal[/gold].",
+  "SELEE-HUAN_YING_ZHI_LIAN.title": "Phantom Scythe",
+  "SELEE-HUAN_YING_ZHI_LIAN.description": "Deal {Damage:diff()} damage.\nGain {Block:diff()} [gold]Block[/gold].\n[gold]Superposition[/gold]: Damage and Block gain an additional +{DieJiaBonus:diff()}",
+  "SELEE-X10_SHI_YAN.title": "X-10 Experiment",
+  "SELEE-X10_SHI_YAN.description": "Gain {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold].\nPlay {Cards:diff()} card(s) from your draw pile.\nAt the start of each turn, lose {X10ShiYanPower:diff()} [gold]Quantum Superposition[/gold], or draw {X10ShiYanPower:diff()} fewer card(s).",
+  "SELEE-X10_SHI_YAN.selectionScreenPrompt": "Choose up to {Cards:diff()} card(s) to play",
+  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.title": "Blade of Sin and Punishment",
+  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.description": "Deal {Damage:diff()} damage.\nIf target has [gold]Quantum Collapse[/gold], gain {Energy:energyIcons()} and {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold]."
 }

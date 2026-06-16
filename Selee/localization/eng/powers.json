@@ -88,5 +88,8 @@
   "SELEE-XUE_DING_E_DE_XI_ER_POWER.smartDescription": "Every 4 HP lost, gain 1 [gold]Quantum Superposition[/gold]. [blue]{Amount}[/blue] more HP lost needed.",
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.title": "Day=Night",
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.description": "When Superposition effect triggers, draw 1 card.",
-  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.smartDescription": "When [gold]Superposition[/gold] effect triggers, draw [blue]{Amount}[/blue] cards."
+  "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.smartDescription": "When [gold]Superposition[/gold] effect triggers, draw [blue]{Amount}[/blue] cards.",
+  "SELEE-X10_SHI_YAN_POWER.title": "X-10 Experiment",
+  "SELEE-X10_SHI_YAN_POWER.description": "At the start of each turn, lose {Amount} [gold]Quantum Superposition[/gold], or draw {Amount} fewer card(s).",
+  "SELEE-X10_SHI_YAN_POWER.smartDescription": "At the start of each turn, lose [blue]{Amount}[/blue] [gold]Quantum Superposition[/gold], or draw [blue]{Amount}[/blue] fewer card(s)."
 }

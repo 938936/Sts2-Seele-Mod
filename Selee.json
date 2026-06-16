@@ -3,7 +3,7 @@
   "name": "希儿",
   "author": "EthanPhelps",
   "description": "希儿角色mod",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "has_pck": true,
   "has_dll": true,
   "dependencies": [{

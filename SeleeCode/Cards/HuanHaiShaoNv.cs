@@ -31,5 +31,6 @@ public class HuanHaiShaoNv() : SeleeCard(1, CardType.Skill, CardRarity.Uncommon,
     protected override void OnUpgrade()
     {
         DynamicVars["LiangZiDieJiaPower"].UpgradeValueBy(1m);
+        DynamicVars.Energy.UpgradeValueBy(1m);
     }
 }

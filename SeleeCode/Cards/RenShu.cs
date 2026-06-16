@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Selee.SeleeCode.Cards;
 
-public class RenShu() : SeleeCard(2, CardType.Power, CardRarity.Rare, TargetType.Self)
+public class RenShu() : SeleeCard(1, CardType.Power, CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower<YuHePower>(),
@@ -24,6 +24,6 @@ public class RenShu() : SeleeCard(2, CardType.Power, CardRarity.Rare, TargetType
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
+        AddKeyword(CardKeyword.Innate);
     }
 }
