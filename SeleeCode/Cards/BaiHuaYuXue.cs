@@ -13,7 +13,7 @@ public class BaiHuaYuXue() : SeleeCard(1, CardType.Power, CardRarity.Rare, Targe
 {
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<BaiHuaYuXuePower>(2),
+        new PowerVar<BaiHuaYuXuePower>(3),
     ];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

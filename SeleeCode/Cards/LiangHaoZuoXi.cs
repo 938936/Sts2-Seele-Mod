@@ -19,7 +19,7 @@ public class LiangHaoZuoXi() : SeleeCard(2, CardType.Skill, CardRarity.Rare, Tar
         var yuHe = base.Owner.Creature.GetPower<YuHePower>();
         if (yuHe != null && yuHe.Amount > 0)
         {
-            int healAmount = yuHe.Amount / 2;
+            int healAmount = (int)Math.Floor(yuHe.Amount * 0.7m);
             if (healAmount > 0)
             {
                 await CreatureCmd.Heal(base.Owner.Creature, healAmount);

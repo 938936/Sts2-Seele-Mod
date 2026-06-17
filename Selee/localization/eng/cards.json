@@ -163,5 +163,9 @@
   "SELEE-X10_SHI_YAN.description": "Gain {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold].\nPlay {Cards:diff()} card(s) from your draw pile.\nAt the start of each turn, lose {X10ShiYanPower:diff()} [gold]Quantum Superposition[/gold], or draw {X10ShiYanPower:diff()} fewer card(s).",
   "SELEE-X10_SHI_YAN.selectionScreenPrompt": "Choose up to {Cards:diff()} card(s) to play",
   "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.title": "Blade of Sin and Punishment",
-  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.description": "Deal {Damage:diff()} damage.\nIf target has [gold]Quantum Collapse[/gold], gain {Energy:energyIcons()} and {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold]."
+  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.description": "Deal {Damage:diff()} damage.\nIf target has [gold]Quantum Collapse[/gold], gain {Energy:energyIcons()} and {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold].",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING.title": "Bloom, Fearing No Wither",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING.description": "At the start of your turn, gain X [gold]Heal[/gold]. If X ≥ 2, draw 1 extra card. If X ≥ 4, draw 2 extra cards.\n[gold]Superposition[/gold]: Draw {DieJiaDraw:diff()} extra card(s).",
+  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.title": "Eternity=Moment",
+  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.description": "Deal {Damage:diff()} damage.\nGain {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold].\nApply {LiangZiTanSuoPower:diff()} [gold]Quantum Collapse[/gold]."
 }

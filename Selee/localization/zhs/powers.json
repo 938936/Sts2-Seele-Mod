@@ -91,5 +91,8 @@
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.smartDescription": "触发[gold]叠加[/gold]效果时，抽[blue]{Amount}[/blue]张牌。",
   "SELEE-X10_SHI_YAN_POWER.title": "X-10实验",
   "SELEE-X10_SHI_YAN_POWER.description": "回合开始时，失去{Amount}层[gold]量子叠加[/gold]，否则少抽{Amount}张牌。",
-  "SELEE-X10_SHI_YAN_POWER.smartDescription": "回合开始时，失去[blue]{Amount}[/blue]层[gold]量子叠加[/gold]，否则少抽[blue]{Amount}[/blue]张牌。"
+  "SELEE-X10_SHI_YAN_POWER.smartDescription": "回合开始时，失去[blue]{Amount}[/blue]层[gold]量子叠加[/gold]，否则少抽[blue]{Amount}[/blue]张牌。",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.title": "盛开，不惧凋零",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.description": "回合开始时，获得X层愈合，抽{DrawCount:diff()}张牌。",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.smartDescription": "回合开始时，获得[blue]{Amount}[/blue]层[gold]愈合[/gold]，抽[blue]{DrawCount:diff()}[/blue]张牌。"
 }

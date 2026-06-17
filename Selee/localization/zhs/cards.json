@@ -70,7 +70,7 @@
   "SELEE-SUI_CHUAN_XIAO_YING.title": "隧穿效应",
   "SELEE-SUI_CHUAN_XIAO_YING.description": "失去{HpLoss:diff()}点生命值。\n抽{Cards:diff()}张牌。\n下回合抽{NextTurnDraw:diff()}张牌。",
   "SELEE-LIANG_HAO_ZUO_XI.title": "良好作息",
-  "SELEE-LIANG_HAO_ZUO_XI.description": "回复相当于[gold]愈合[/gold]层数50%的生命值。",
+  "SELEE-LIANG_HAO_ZUO_XI.description": "回复相当于[gold]愈合[/gold]层数70%的生命值。",
   "SELEE-XIAO_GE_LU_YING.title": "晓歌露影",
   "SELEE-XIAO_GE_LU_YING.description": "目标本回合每受到一次攻击，你获得{XiaoGeLuYingPower:diff()}层[gold]愈合[/gold]。",
   "SELEE-RU_ZHAO_LU_XIAO_SAN_YU_CHEN_XI.title": "如朝露，消散于晨曦",
@@ -165,5 +165,9 @@
   "SELEE-X10_SHI_YAN.description": "获得{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。\n打出抽牌堆的{Cards:diff()}张牌。\n回合开始时，失去{X10ShiYanPower:diff()}层[gold]量子叠加[/gold]，否则少抽{X10ShiYanPower:diff()}张牌。",
   "SELEE-X10_SHI_YAN.selectionScreenPrompt": "选择最多{Cards:diff()}张牌打出",
   "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.title": "罪罚两断之刃",
-  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.description": "造成{Damage:diff()}点伤害。\n若目标持有[gold]量子坍缩[/gold]状态，获得{Energy:energyIcons()}和{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。"
+  "SELEE-ZUI_FA_LIANG_DUAN_ZHI_REN.description": "造成{Damage:diff()}点伤害。\n若目标持有[gold]量子坍缩[/gold]状态，获得{Energy:energyIcons()}和{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING.title": "盛开，不惧凋零",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING.description": "回合开始时，获得X层[gold]愈合[/gold]，若X的值不小于2则多抽1张牌，若X的值不小于4，则多抽2张牌。",
+  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.title": "永恒=一瞬",
+  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.description": "造成{Damage:diff()}点伤害。\n获得{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。\n施加{LiangZiTanSuoPower:diff()}层[gold]量子坍缩[/gold]。"
 }

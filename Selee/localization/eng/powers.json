@@ -91,5 +91,8 @@
   "SELEE-BAI_ZHOU_DENG_YU_HEI_YE_POWER.smartDescription": "When [gold]Superposition[/gold] effect triggers, draw [blue]{Amount}[/blue] cards.",
   "SELEE-X10_SHI_YAN_POWER.title": "X-10 Experiment",
   "SELEE-X10_SHI_YAN_POWER.description": "At the start of each turn, lose {Amount} [gold]Quantum Superposition[/gold], or draw {Amount} fewer card(s).",
-  "SELEE-X10_SHI_YAN_POWER.smartDescription": "At the start of each turn, lose [blue]{Amount}[/blue] [gold]Quantum Superposition[/gold], or draw [blue]{Amount}[/blue] fewer card(s)."
+  "SELEE-X10_SHI_YAN_POWER.smartDescription": "At the start of each turn, lose [blue]{Amount}[/blue] [gold]Quantum Superposition[/gold], or draw [blue]{Amount}[/blue] fewer card(s).",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.title": "Bloom, Fearing No Wither",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.description": "At the start of your turn, gain {Amount} Heal. Draw {DrawCount:diff()} card(s).",
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Heal[/gold]. Draw [blue]{DrawCount:diff()}[/blue] card(s)."
 }
