@@ -177,5 +177,5 @@
   "SELEE-RU_JING_TING_DUAN_REN_YU_XIN.title": "如惊霆，锻韧于心",
   "SELEE-RU_JING_TING_DUAN_REN_YU_XIN.description": "使你的[gold]愈合[/gold]层数翻倍。",
   "SELEE-HUN_LING_YUE_DONG.title": "魂灵跃动",
-  "SELEE-HUN_LING_YUE_DONG.description": "造成{CalculatedDamage:diff()}点伤害。\n你每失去一次生命值，这张牌在本场战斗中造成的伤害增加{CalculationExtra:diff()}。"
+  "SELEE-HUN_LING_YUE_DONG.description": "造成{CalculatedDamage:diff()}点伤害。\n你每失去一次生命值，这张牌在本场战斗中造成的伤害增加{ExtraDamage:diff()}。"
 }
