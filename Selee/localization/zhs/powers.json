@@ -94,5 +94,8 @@
   "SELEE-X10_SHI_YAN_POWER.smartDescription": "回合开始时，失去[blue]{Amount}[/blue]层[gold]量子叠加[/gold]，否则少抽[blue]{Amount}[/blue]张牌。",
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.title": "盛开，不惧凋零",
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.description": "回合开始时，获得X层愈合，抽{DrawCount:diff()}张牌。",
-  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.smartDescription": "回合开始时，获得[blue]{Amount}[/blue]层[gold]愈合[/gold]，抽[blue]{DrawCount:diff()}[/blue]张牌。"
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.smartDescription": "回合开始时，获得[blue]{Amount}[/blue]层[gold]愈合[/gold]，抽[blue]{DrawCount:diff()}[/blue]张牌。",
+  "SELEE-CUN_ZAI_PAO_YING_POWER.title": "存在泡影",
+  "SELEE-CUN_ZAI_PAO_YING_POWER.description": "触发叠加效果时，对随机敌人造成5点伤害。",
+  "SELEE-CUN_ZAI_PAO_YING_POWER.smartDescription": "触发[gold]叠加[/gold]效果时，对随机敌人造成[blue]{Amount}[/blue]点伤害。"
 }

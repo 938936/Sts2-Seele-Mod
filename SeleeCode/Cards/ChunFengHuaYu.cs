@@ -19,7 +19,7 @@ public class ChunFengHuaYu() : SeleeCard(1, CardType.Skill, CardRarity.Uncommon,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [SeleeCardKeyword.XingHuanBaoFa, SeleeCardKeyword.DieJia];
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new CalculationBaseVar(8m),
+        new CalculationBaseVar(6m),
         new CalculationExtraVar(4m),
         new CalculatedBlockVar( ValueProp.Move).WithMultiplier((CardModel card, Creature? _) => card.Owner.Creature.HasPower<LiangZiDieJiaPower>()?1m:0m),
         new DynamicVar("XingHuanNengJi", 15m),

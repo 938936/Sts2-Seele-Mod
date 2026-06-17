@@ -32,5 +32,6 @@ public class TianChengBengLuoZhiKe() : SeleeCard(1, CardType.Skill, CardRarity.R
     protected override void OnUpgrade()
     {
         EnergyCost.UpgradeBy(-1);
+        DynamicVars["LiangZiTanSuoPower"].UpgradeValueBy(1m);
     }
 }

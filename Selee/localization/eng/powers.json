@@ -94,5 +94,8 @@
   "SELEE-X10_SHI_YAN_POWER.smartDescription": "At the start of each turn, lose [blue]{Amount}[/blue] [gold]Quantum Superposition[/gold], or draw [blue]{Amount}[/blue] fewer card(s).",
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.title": "Bloom, Fearing No Wither",
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.description": "At the start of your turn, gain {Amount} Heal. Draw {DrawCount:diff()} card(s).",
-  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Heal[/gold]. Draw [blue]{DrawCount:diff()}[/blue] card(s)."
+  "SELEE-SHENG_KAI_BU_JU_DIAO_LING_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Heal[/gold]. Draw [blue]{DrawCount:diff()}[/blue] card(s).",
+  "SELEE-CUN_ZAI_PAO_YING_POWER.title": "Existential Bubble",
+  "SELEE-CUN_ZAI_PAO_YING_POWER.description": "When Superposition effect triggers, deal 5 damage to a random enemy.",
+  "SELEE-CUN_ZAI_PAO_YING_POWER.smartDescription": "When [gold]Superposition[/gold] effect triggers, deal [blue]{Amount}[/blue] damage to a random enemy."
 }

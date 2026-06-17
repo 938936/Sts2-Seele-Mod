@@ -169,5 +169,13 @@
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING.title": "盛开，不惧凋零",
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING.description": "回合开始时，获得X层[gold]愈合[/gold]，若X的值不小于2则多抽1张牌，若X的值不小于4，则多抽2张牌。",
   "SELEE-YONG_HENG_DENG_YU_YI_SHUN.title": "永恒=一瞬",
-  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.description": "造成{Damage:diff()}点伤害。\n获得{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。\n施加{LiangZiTanSuoPower:diff()}层[gold]量子坍缩[/gold]。"
+  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.description": "造成{Damage:diff()}点伤害。\n获得{LiangZiDieJiaPower:diff()}层[gold]量子叠加[/gold]。\n施加{LiangZiTanSuoPower:diff()}层[gold]量子坍缩[/gold]。",
+  "SELEE-CUN_ZAI_PAO_YING.title": "存在泡影",
+  "SELEE-CUN_ZAI_PAO_YING.description": "触发[gold]叠加[/gold]效果时，对随机敌人造成{CunZaiPaoYingPower:diff()}点伤害。",
+  "SELEE-KUA_GUO_HEI_YE_DE_CHEN_XI.title": "跨过黑夜的晨曦",
+  "SELEE-KUA_GUO_HEI_YE_DE_CHEN_XI.description": "造成{Damage:diff()}点伤害。\n[gold]叠加{DieJiaCount:diff()}[/gold]：耗能减少{EnergyReduction:diff()}。",
+  "SELEE-RU_JING_TING_DUAN_REN_YU_XIN.title": "如惊霆，锻韧于心",
+  "SELEE-RU_JING_TING_DUAN_REN_YU_XIN.description": "使你的[gold]愈合[/gold]层数翻倍。",
+  "SELEE-HUN_LING_YUE_DONG.title": "魂灵跃动",
+  "SELEE-HUN_LING_YUE_DONG.description": "造成{CalculatedDamage:diff()}点伤害。\n你每失去一次生命值，这张牌在本场战斗中造成的伤害增加{CalculationExtra:diff()}。"
 }

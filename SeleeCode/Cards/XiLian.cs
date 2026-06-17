@@ -47,6 +47,7 @@ public class XiLian() : SeleeCard(1, CardType.Attack, CardRarity.Common, TargetT
         {
             return false;
         }
+        // 手牌中或打出时展示0耗能
         if (card.Pile?.Type != PileType.Hand && card.Pile?.Type !=  PileType.Play)
         {
             return false;

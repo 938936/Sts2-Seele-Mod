@@ -167,5 +167,13 @@
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING.title": "Bloom, Fearing No Wither",
   "SELEE-SHENG_KAI_BU_JU_DIAO_LING.description": "At the start of your turn, gain X [gold]Heal[/gold]. If X ≥ 2, draw 1 extra card. If X ≥ 4, draw 2 extra cards.\n[gold]Superposition[/gold]: Draw {DieJiaDraw:diff()} extra card(s).",
   "SELEE-YONG_HENG_DENG_YU_YI_SHUN.title": "Eternity=Moment",
-  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.description": "Deal {Damage:diff()} damage.\nGain {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold].\nApply {LiangZiTanSuoPower:diff()} [gold]Quantum Collapse[/gold]."
+  "SELEE-YONG_HENG_DENG_YU_YI_SHUN.description": "Deal {Damage:diff()} damage.\nGain {LiangZiDieJiaPower:diff()} [gold]Quantum Superposition[/gold].\nApply {LiangZiTanSuoPower:diff()} [gold]Quantum Collapse[/gold].",
+  "SELEE-CUN_ZAI_PAO_YING.title": "Existential Bubble",
+  "SELEE-CUN_ZAI_PAO_YING.description": "When [gold]Superposition[/gold] effect triggers, deal {CunZaiPaoYingPower:diff()} damage to a random enemy.",
+  "SELEE-KUA_GUO_HEI_YE_DE_CHEN_XI.title": "Dawn Across the Night",
+  "SELEE-KUA_GUO_HEI_YE_DE_CHEN_XI.description": "Deal {Damage:diff()} damage.\n[gold]Superposition {DieJiaCount:diff()}[/gold]: Cost reduced by {EnergyReduction:diff()}.",
+  "SELEE-RU_JING_TING_DUAN_REN_YU_XIN.title": "Like Thunder, Forging Resilience",
+  "SELEE-RU_JING_TING_DUAN_REN_YU_XIN.description": "Double your [gold]Heal[/gold] stacks.",
+  "SELEE-HUN_LING_YUE_DONG.title": "Soul Leap",
+  "SELEE-HUN_LING_YUE_DONG.description": "Deal {CalculatedDamage:diff()} damage.\nEach time you lose HP, this card deals {CalculationExtra:diff()} more damage for the rest of combat."
 }
