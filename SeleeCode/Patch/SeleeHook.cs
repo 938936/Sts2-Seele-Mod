@@ -3,7 +3,10 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Context;
+using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Hooks;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -49,13 +52,14 @@ public class SeleeHook
         }
     }
 
-    public static async Task AfterGongMingTrigger(Player owner, CardModel triggerCard)
+    public static async Task AfterGongMingTrigger(Player owner, CardModel triggerCard,PlayerChoiceContext? choiceContext = null)
     {
         foreach (AbstractModel item in owner.Creature?.CombatState?.IterateHookListeners() ?? [])
         {
             if (item is ISeleeHook hookItem)
             {
-                await hookItem.AfterGongMingTrigger(owner, triggerCard);
+                await hookItem.AfterGongMingTrigger(owner, triggerCard,
+                    choiceContext ?? new HookPlayerChoiceContext(owner, LocalContext.NetId ?? 0, GameActionType.Combat));
             }
         }
     }
@@ -73,7 +77,7 @@ public interface ISeleeHook
         return Task.CompletedTask;
     }
 
-    public Task AfterGongMingTrigger(Player owner, CardModel triggerCard)
+    public Task AfterGongMingTrigger(Player owner, CardModel triggerCard, PlayerChoiceContext? choiceContext = null)
     {
         return Task.CompletedTask;
     }

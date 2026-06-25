@@ -3,12 +3,12 @@
   "name": "希儿",
   "author": "EthanPhelps",
   "description": "希儿角色mod",
-  "version": "v1.0",
+  "version": "v1.0.2",
   "has_pck": true,
   "has_dll": true,
   "dependencies": [{
     "id": "BaseLib",
-    "min_version": "v3.2.1"
+    "min_version": "v3.3.0"
   }],
   "affects_gameplay": true
 }

@@ -51,7 +51,7 @@ public class SuHuiHaiYuDeYaoLan() : SeleeCard(0, CardType.Attack, CardRarity.Rar
         {
             decimal nengJiGain = dongNengAmount * DynamicVars["NengJiPerDongNeng"].BaseValue;
             dongNengAmount = 0;
-            await SeleeHook.AfterGongMingTrigger(base.Owner, this);
+            await SeleeHook.AfterGongMingTrigger(base.Owner, this, choiceContext);
             await PowerCmd.Apply<XingHuanNengJiPower>(choiceContext, base.Owner.Creature, nengJiGain, base.Owner.Creature, this);
             await CardPileCmd.Draw(choiceContext, dongNengAmount * DynamicVars.Cards.IntValue, Owner);
         }

@@ -12,6 +12,9 @@
 如惊霆，锻韧于心
 魂灵跃动
 
+实现抽牌效果时，如果没有玩家操作的choiceContext，不能使用ThrowingPlayerChoiceContext作为上下文，否则若该次抽牌触发玩家选取效果则会报错，需要改为使用HookPlayerChoiceContext实现
+请修复存在该问题的地方并记录开发经验。
+
 已删除魂灵跃动的能力，请使用非能力的方式实现
 
 盛开，不惧凋零

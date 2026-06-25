@@ -49,7 +49,7 @@ public class QingBaoJiaoYi() : SeleeCard(1, CardType.Skill, CardRarity.Uncommon,
         if (HasGongMing)
         {
             await PowerCmd.Apply<JianBingDongNengPower>(choiceContext, cardPlay.Target, DynamicVars["GongMingJianBingDongNengPower"].BaseValue, base.Owner.Creature, this);
-            await SeleeHook.AfterGongMingTrigger(Owner, this);
+            await SeleeHook.AfterGongMingTrigger(Owner, this, choiceContext);
         }
 
         if (dieJiaPower != null)

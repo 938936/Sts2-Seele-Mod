@@ -4,6 +4,8 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Context;
+using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -49,9 +51,7 @@ public class LiangZiXingTaiPower() : SeleePower, ISeleeHook
         {
             _dieJiaTriggeredThisTurn = true;
             Flash();
-#pragma warning disable CS8604 // 引用类型参数可能为 null。
-            await CardPileCmd.Draw(new ThrowingPlayerChoiceContext(), DynamicVars["Cards"].IntValue, base.Owner.Player);
-#pragma warning restore CS8604 // 引用类型参数可能为 null。
+            await CardPileCmd.Draw(new HookPlayerChoiceContext(owner, LocalContext.NetId ?? 0, GameActionType.Combat), DynamicVars["Cards"].IntValue, owner);
         }
     }
 }

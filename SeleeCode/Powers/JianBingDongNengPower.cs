@@ -56,7 +56,7 @@ public class JianBingDongNengPower() : SeleePower
         {
             Flash();
             await PowerCmd.Decrement(this);
-            await SeleeHook.AfterGongMingTrigger(base.Owner.Player!, cardPlay.Card);
+            await SeleeHook.AfterGongMingTrigger(base.Owner.Player!, cardPlay.Card, choiceContext);
             if (base.Amount <= 0 && base.Owner.HasPower<XingHuanBaoFaPower>())
             {
                 await PowerCmd.Remove<XingHuanBaoFaPower>(base.Owner);
