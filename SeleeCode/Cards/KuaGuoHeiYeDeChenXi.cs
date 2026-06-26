@@ -36,7 +36,7 @@ public class KuaGuoHeiYeDeChenXi() : SeleeCard(3, CardType.Attack, CardRarity.Un
         if (dieJiaPower != null && dieJiaPower.Amount >= DynamicVars["DieJiaCount"].IntValue)
         {
             await PowerCmd.ModifyAmount(choiceContext, dieJiaPower, 1 - DynamicVars["DieJiaCount"].IntValue, Owner.Creature, this);
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
 
 

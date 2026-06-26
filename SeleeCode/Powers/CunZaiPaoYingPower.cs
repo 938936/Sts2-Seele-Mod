@@ -14,7 +14,7 @@ public class CunZaiPaoYingPower() : SeleePower, ISeleeHook
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard)
+    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard,PlayerChoiceContext? choiceContext = null)
     {
         if (owner.Creature == Owner)
         {
@@ -25,7 +25,8 @@ public class CunZaiPaoYingPower() : SeleePower, ISeleeHook
                 if (target!=null)
                 {
                     VfxCmd.PlayOnCreatureCenter(target, "vfx/vfx_attack_blunt");
-                    await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), target, base.Amount, ValueProp.Unpowered, base.Owner, null);
+                    await CreatureCmd.Damage(choiceContext ?? new ThrowingPlayerChoiceContext(), target, base.Amount,
+                        ValueProp.Unpowered, base.Owner, null);
                 }
             }
         }

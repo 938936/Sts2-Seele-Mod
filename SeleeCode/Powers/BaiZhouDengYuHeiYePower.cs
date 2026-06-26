@@ -16,13 +16,14 @@ public class BaiZhouDengYuHeiYePower() : SeleePower, ISeleeHook
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard)
+    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard,PlayerChoiceContext? choiceContext = null)
     {
         if (owner.Creature == Owner)
         {
             Flash();
-            HookPlayerChoiceContext hookPlayerChoiceContext = new HookPlayerChoiceContext(owner, LocalContext.NetId??0, GameActionType.Combat);
-            await CardPileCmd.Draw(hookPlayerChoiceContext, base.Amount, owner);
+            await CardPileCmd.Draw(
+                choiceContext ?? new HookPlayerChoiceContext(owner, LocalContext.NetId ?? 0, GameActionType.Combat)
+                , base.Amount, owner);
         }
     }
 }

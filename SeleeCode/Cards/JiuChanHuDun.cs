@@ -35,7 +35,7 @@ public class JiuChanHuDun() : SeleeCard(1, CardType.Skill, CardRarity.Common, Ta
 
         if (dieJiaPower != null)
         {
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

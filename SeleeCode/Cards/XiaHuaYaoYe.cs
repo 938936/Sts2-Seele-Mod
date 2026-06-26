@@ -50,7 +50,7 @@ public class XiaHuaYaoYe() : SeleeCard(1, CardType.Skill, CardRarity.Uncommon, T
 
         if (dieJiaPower != null)
         {
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

@@ -20,7 +20,7 @@ public class DieWu() : SeleeCard(0, CardType.Attack, CardRarity.Uncommon, Target
         new DamageVar(4m, ValueProp.Move),
     ];
 
-    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard)
+    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard,PlayerChoiceContext? choiceContext = null)
     {
         if (Pile?.Type != PileType.Hand && Owner == owner)
         {

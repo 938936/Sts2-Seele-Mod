@@ -38,7 +38,7 @@ public class GuangYingXiangXie() : SeleeCard(0, CardType.Skill, CardRarity.Uncom
             await CardPileCmd.AddGeneratedCardToCombat(luoYing, PileType.Draw, base.Owner, CardPilePosition.Random);
             //先减少X-1层，然后触发Hook再减少一层
             await PowerCmd.ModifyAmount(choiceContext,dieJiaPower , 1-DynamicVars["DieJiaCount"].BaseValue, Owner.Creature, this);
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

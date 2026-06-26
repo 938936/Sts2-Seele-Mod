@@ -44,7 +44,7 @@ public class ChunFengHuaYu() : SeleeCard(1, CardType.Skill, CardRarity.Uncommon,
 
         if (dieJiaPower != null)
         {
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

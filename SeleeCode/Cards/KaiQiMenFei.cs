@@ -38,7 +38,7 @@ public class KaiQiMenFei() : SeleeCard(1, CardType.Skill, CardRarity.Uncommon, T
         {
             await PowerCmd.Apply<VulnerablePower>(choiceContext, base.CombatState.HittableEnemies, DynamicVars["DieJiaVulnerablePower"].BaseValue, base.Owner.Creature, this);
             await PowerCmd.Apply<WeakPower>(choiceContext, base.CombatState.HittableEnemies, DynamicVars["DieJiaWeakPower"].BaseValue, base.Owner.Creature, this);
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
         else
         {

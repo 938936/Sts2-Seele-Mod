@@ -45,13 +45,13 @@ public class LiangZiXingTaiPower() : SeleePower, ISeleeHook
         }
     }
 
-    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard)
+    public async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard,PlayerChoiceContext? choiceContext = null)
     {
         if (!_dieJiaTriggeredThisTurn && owner.Creature == this.Owner) 
         {
             _dieJiaTriggeredThisTurn = true;
             Flash();
-            await CardPileCmd.Draw(new HookPlayerChoiceContext(owner, LocalContext.NetId ?? 0, GameActionType.Combat), DynamicVars["Cards"].IntValue, owner);
+            await CardPileCmd.Draw(choiceContext ?? new HookPlayerChoiceContext(owner, LocalContext.NetId ?? 0, GameActionType.Combat), DynamicVars["Cards"].IntValue, owner);
         }
     }
 }

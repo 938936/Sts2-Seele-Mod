@@ -53,7 +53,7 @@ public class HuanYingZhiLian() : SeleeCard(0, CardType.Attack, CardRarity.Uncomm
 
         if (dieJiaPower != null)
         {
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

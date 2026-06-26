@@ -50,7 +50,7 @@ public class MingGuangAnYing() : SeleeCard(1, CardType.Attack, CardRarity.Common
 
         if (dieJiaPower != null)
         {
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

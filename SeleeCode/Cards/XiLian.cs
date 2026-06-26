@@ -32,7 +32,7 @@ public class XiLian() : SeleeCard(1, CardType.Attack, CardRarity.Common, TargetT
         var dieJiaPower = base.Owner.Creature.GetPower<LiangZiDieJiaPower>();
         if (dieJiaPower != null)
         {
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

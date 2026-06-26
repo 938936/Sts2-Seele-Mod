@@ -49,7 +49,7 @@ public class JingMiLiRen() : SeleeCard(2, CardType.Attack, CardRarity.Rare, Targ
                 .WithHitFx("vfx/vfx_attack_slash")
                 .Execute(choiceContext);
 
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
 
             var remainingPower = base.Owner.Creature.GetPower<LiangZiDieJiaPower>();
             if (remainingPower != null)

@@ -39,7 +39,7 @@ public class TanSuoGongJi() : SeleeCard(1, CardType.Attack, CardRarity.Basic, Ta
 
         if (dieJiaPower != null)
         {
-            await SeleeHook.AfterDieJiaTrigger(Owner,this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this, choiceContext);
         }
     }
 

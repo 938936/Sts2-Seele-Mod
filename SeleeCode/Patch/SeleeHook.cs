@@ -36,19 +36,21 @@ public class SeleeHook
         return value;
     }
     
-    public static async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard)
+    public static async Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard,PlayerChoiceContext? choiceContext = null)
     {
         foreach (AbstractModel item in owner.Creature?.CombatState?.IterateHookListeners() ?? [])
         {
             if (item is ISeleeHook hookItem)
             {
-                await hookItem.AfterDieJiaTrigger(owner, triggerCard);
+                await hookItem.AfterDieJiaTrigger(owner, triggerCard, choiceContext);
             }
         }
         var power = owner.Creature?.GetPower<LiangZiDieJiaPower>();
         if (power != null)
         {
-            await PowerCmd.Decrement(power);
+            await PowerCmd.ModifyAmount(
+                choiceContext ?? new HookPlayerChoiceContext(owner, LocalContext.NetId ?? 0, GameActionType.Combat),
+                power, -1, owner.Creature, triggerCard);
         }
     }
 
@@ -72,7 +74,7 @@ public interface ISeleeHook
         return oriValue;
     }
 
-    public Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard)
+    public Task AfterDieJiaTrigger(Player owner, CardModel? triggerCard,PlayerChoiceContext? choiceContext = null)
     {
         return Task.CompletedTask;
     }

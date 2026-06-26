@@ -45,7 +45,7 @@ public class HuaXuWeiShi() : SeleeCard(1, CardType.Attack, CardRarity.Ancient, T
         if (dieJiaPower != null)
         {
             await PowerCmd.Apply<LiangZiTanSuoPower>(choiceContext, cardPlay.Target, DynamicVars["DieJiaLiangZiTanSuoPower"].BaseValue, base.Owner.Creature, this);
-            await SeleeHook.AfterDieJiaTrigger(Owner, this);
+            await SeleeHook.AfterDieJiaTrigger(Owner, this,choiceContext);
         }
     }
 
