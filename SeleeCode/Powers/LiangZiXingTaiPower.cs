@@ -36,12 +36,21 @@ public class LiangZiXingTaiPower() : SeleePower, ISeleeHook
         }
     }
 
-    public override async Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, decimal amount, Creature? applier,
+    public override Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, decimal amount, Creature? applier,
         CardModel? cardSource)
     {
-        if (power == this)
+        try
         {
-            DynamicVars["Cards"].BaseValue=Amount;
+            if (power == this)
+            {
+                DynamicVars["Cards"].BaseValue=Amount;
+            }
+
+            return Task.CompletedTask;
+        }
+        catch (Exception exception)
+        {
+            return Task.FromException(exception);
         }
     }
 

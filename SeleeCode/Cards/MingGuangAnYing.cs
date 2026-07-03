@@ -32,7 +32,7 @@ public class MingGuangAnYing() : SeleeCard(1, CardType.Attack, CardRarity.Common
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-            .FromCard(this)
+            .FromCard(this,cardPlay)
 #pragma warning disable CS8604
             .Targeting(cardPlay.Target)
 #pragma warning restore CS8604

@@ -31,7 +31,7 @@ public class XingRuDaoGe() : SeleeCard(1, CardType.Attack, CardRarity.Common, Ta
         if (HasGongMing)
         {
             await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-                .FromCard(this).TargetingAllOpponents(base.CombatState!)
+                .FromCard(this,cardPlay).TargetingAllOpponents(base.CombatState!)
                 .WithHitFx("vfx/vfx_attack_slash")
                 .Execute(choiceContext);
         }
@@ -39,7 +39,7 @@ public class XingRuDaoGe() : SeleeCard(1, CardType.Attack, CardRarity.Common, Ta
         {
             ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
             await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-                .FromCard(this).Targeting(cardPlay.Target)
+                .FromCard(this,cardPlay).Targeting(cardPlay.Target)
                 .WithHitFx("vfx/vfx_attack_slash")
                 .Execute(choiceContext);
         }

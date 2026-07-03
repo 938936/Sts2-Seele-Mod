@@ -29,7 +29,7 @@ public class YuHeDaJi() : SeleeCard(1, CardType.Attack, CardRarity.Common, Targe
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
         var attackCommand = await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-            .FromCard(this).Targeting(cardPlay.Target)
+            .FromCard(this,cardPlay).Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
 

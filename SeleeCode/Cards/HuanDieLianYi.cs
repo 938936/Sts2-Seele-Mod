@@ -28,7 +28,7 @@ public class HuanDieLianYi() : SeleeCard(1, CardType.Attack, CardRarity.Common, 
         var dieJiaPower = base.Owner.Creature.GetPower<LiangZiDieJiaPower>();
 
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-            .FromCard(this).Targeting(cardPlay.Target)
+            .FromCard(this,cardPlay).Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
 

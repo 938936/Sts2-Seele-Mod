@@ -25,7 +25,7 @@ public class DanShengZhongMo() : SeleeCard(1, CardType.Attack, CardRarity.Rare, 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-            .FromCard(this)
+            .FromCard(this,cardPlay)
             .TargetingAllOpponents(base.CombatState!)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
@@ -35,7 +35,7 @@ public class DanShengZhongMo() : SeleeCard(1, CardType.Attack, CardRarity.Rare, 
             if (enemy.HasPower<LiangZiTanSuoPower>())
             {
                 int hpLoss = Math.Max((int)Math.Floor((decimal)enemy.MaxHp * DynamicVars["MaxHpPercent"].BaseValue / 100m), 1);
-                await CreatureCmd.Damage(choiceContext, enemy, hpLoss, ValueProp.Unblockable | ValueProp.Unpowered, base.Owner.Creature, this);
+                await CreatureCmd.Damage(choiceContext, enemy, hpLoss, ValueProp.Unblockable | ValueProp.Unpowered, base.Owner.Creature, this, cardPlay);
             }
         }
     }

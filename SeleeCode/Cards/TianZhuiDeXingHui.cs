@@ -23,7 +23,7 @@ public class TianZhuiDeXingHui() : SeleeCard(1, CardType.Attack, CardRarity.Rare
     {
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
             .WithHitCount(base.DynamicVars["HitCount"].IntValue)
-            .FromCard(this)
+            .FromCard(this,cardPlay)
 #pragma warning disable CS8604
             .TargetingRandomOpponents(base.CombatState)
 #pragma warning restore CS8604

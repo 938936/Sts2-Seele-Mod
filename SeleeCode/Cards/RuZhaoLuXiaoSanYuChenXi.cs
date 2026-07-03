@@ -24,12 +24,12 @@ public class RuZhaoLuXiaoSanYuChenXi() : SeleeCard(2, CardType.Attack, CardRarit
     {
         _killedEnemy = false;
 
-        await CreatureCmd.Damage(choiceContext, base.Owner.Creature, DynamicVars["HpLoss"].BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this);
+        await CreatureCmd.Damage(choiceContext, base.Owner.Creature, DynamicVars["HpLoss"].BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this, cardPlay);
 
         var targets = base.CombatState!.HittableEnemies.ToList();
 
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue)
-            .FromCard(this)
+            .FromCard(this,cardPlay)
             .TargetingAllOpponents(base.CombatState!)
             .Execute(choiceContext);
 

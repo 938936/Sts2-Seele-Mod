@@ -33,7 +33,7 @@ public class JianBingDongNengPower() : SeleePower
     }
     
 
-    public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
+    public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource, CardPlay? cardPlay)
     {
         if (dealer != base.Owner) return 1m;
         if (!props.IsPoweredAttack() || cardSource == null) return 1m;

@@ -30,23 +30,19 @@ public class GanLinHuiXiang() : SeleeCard(0, CardType.Attack, CardRarity.Uncommo
         ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
 
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-            .FromCard(this).Targeting(cardPlay.Target)
+            .FromCard(this,cardPlay).Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
     }
     
-    protected override PileType GetResultPileTypeForCardPlay()
+    protected override (PileType, CardPilePosition) GetResultPileTypeAndPositionForCardPlay()
     {
-        PileType resultPileTypeForCardPlay = base.GetResultPileTypeForCardPlay();
-        if (resultPileTypeForCardPlay != PileType.Discard)
+        var (pileType, position) = base.GetResultPileTypeAndPositionForCardPlay();
+        if (pileType == PileType.Discard && HasGongMing)
         {
-            return resultPileTypeForCardPlay;
+            return (PileType.Hand, position);
         }
-        if (HasGongMing)
-        {
-            return PileType.Hand;
-        }
-        return resultPileTypeForCardPlay;
+        return (pileType, position);
     }
 
     protected override void OnUpgrade()

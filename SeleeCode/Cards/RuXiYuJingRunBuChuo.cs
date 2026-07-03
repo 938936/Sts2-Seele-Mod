@@ -38,7 +38,7 @@ public class RuXiYuJingRunBuChuo() : SeleeCard(1, CardType.Attack, CardRarity.Un
         {
             await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
                 .WithHitCount(exhaustCount)
-                .FromCard(this)
+                .FromCard(this,cardPlay)
                 .TargetingRandomOpponents(base.CombatState!)
                 .Execute(choiceContext);
 

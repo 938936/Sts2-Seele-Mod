@@ -27,7 +27,7 @@ public class TianChengBengLuoZhiKePower() : SeleePower
         var otherEnemies = base.CombatState!.HittableEnemies.Where(e => e != base.Owner && !e.IsDead).ToList();
         foreach (var enemy in otherEnemies)
         {
-            await CreatureCmd.Damage(choiceContext, enemy, damage, ValueProp.Unpowered, Applier, null);
+            await CreatureCmd.Damage(choiceContext, enemy, damage, ValueProp.Unpowered, Applier, null, null);
         }
 
         await PowerCmd.Remove(this);

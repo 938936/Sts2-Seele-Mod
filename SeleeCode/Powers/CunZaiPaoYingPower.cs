@@ -26,7 +26,7 @@ public class CunZaiPaoYingPower() : SeleePower, ISeleeHook
                 {
                     VfxCmd.PlayOnCreatureCenter(target, "vfx/vfx_attack_blunt");
                     await CreatureCmd.Damage(choiceContext ?? new ThrowingPlayerChoiceContext(), target, base.Amount,
-                        ValueProp.Unpowered, base.Owner, null);
+                        ValueProp.Unpowered, base.Owner, null, null);
                 }
             }
         }

@@ -27,7 +27,7 @@ public class YuLuoYingHua() : SeleeCard(1, CardType.Attack, CardRarity.Uncommon,
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-            .FromCard(this).TargetingAllOpponents(base.CombatState!)
+            .FromCard(this,cardPlay).TargetingAllOpponents(base.CombatState!)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
         if (!base.Owner.Creature.HasPower<XingHuanBaoFaPower>())

@@ -44,7 +44,7 @@ public class HuanYingZhiLian() : SeleeCard(0, CardType.Attack, CardRarity.Uncomm
         CustomCalculatedBlockVar block = (DynamicVars["Block"] as CustomCalculatedBlockVar)!;
 
         await DamageCmd.Attack(damage.CalculateCustom(cardPlay.Target))
-            .FromCard(this).Targeting(cardPlay.Target)
+            .FromCard(this,cardPlay).Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
 

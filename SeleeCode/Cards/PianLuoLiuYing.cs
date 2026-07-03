@@ -36,7 +36,7 @@ public class PianLuoLiuYing() : SeleeCard(1, CardType.Attack, CardRarity.Common,
 
         await DamageCmd.Attack(damage)
             .WithHitCount(hitCount)
-            .FromCard(this).Targeting(cardPlay.Target)
+            .FromCard(this,cardPlay).Targeting(cardPlay.Target)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
     }

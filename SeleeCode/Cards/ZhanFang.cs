@@ -23,7 +23,7 @@ public class ZhanFang() : SeleeCard(0, CardType.Attack, CardRarity.Uncommon, Tar
         int xValue = ResolveEnergyXValue();
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
             .WithHitCount(xValue)
-            .FromCard(this)
+            .FromCard(this,cardPlay)
             .TargetingRandomOpponents(base.CombatState!)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);

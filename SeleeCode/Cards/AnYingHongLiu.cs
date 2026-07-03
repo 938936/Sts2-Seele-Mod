@@ -35,7 +35,7 @@ public class AnYingHongLiu() : SeleeCard(2, CardType.Attack, CardRarity.Rare, Ta
     {
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
             .WithHitCount(DynamicVars["HitCount"].IntValue)
-            .FromCard(this).TargetingAllOpponents(base.CombatState!)
+            .FromCard(this,cardPlay).TargetingAllOpponents(base.CombatState!)
             .WithHitFx("vfx/vfx_attack_slash")
             .Execute(choiceContext);
 

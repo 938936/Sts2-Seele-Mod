@@ -22,7 +22,7 @@ public class LiangZiTanSuoPower() : SeleePower
         new DynamicVar("DamageDealtMultiplier", 0.75m),
     ];
 
-    public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
+    public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource, CardPlay? cardPlay)
     {
         if (!props.IsPoweredAttack()) return 1m;
 

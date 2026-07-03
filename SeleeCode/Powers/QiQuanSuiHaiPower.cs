@@ -23,7 +23,7 @@ public class QiQuanSuiHaiPower() : SeleePower
 
     public override PowerInstanceType InstanceType => PowerInstanceType.Instanced;
 
-    public override decimal ModifyDamageAdditive(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
+    public override decimal ModifyDamageAdditive(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource, CardPlay? cardPlay)
     {
         if (dealer != base.Owner) return 0m;
         if (!props.IsPoweredAttack() || cardSource == null) return 0m;

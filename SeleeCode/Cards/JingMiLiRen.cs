@@ -30,7 +30,7 @@ public class JingMiLiRen() : SeleeCard(2, CardType.Attack, CardRarity.Rare, Targ
     {
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
             .WithHitCount(3)
-            .FromCard(this)
+            .FromCard(this,cardPlay)
 #pragma warning disable CS8604 // 引用类型参数可能为 null。
             .TargetingRandomOpponents(base.CombatState)
 #pragma warning restore CS8604 // 引用类型参数可能为 null。
@@ -43,7 +43,7 @@ public class JingMiLiRen() : SeleeCard(2, CardType.Attack, CardRarity.Rare, Targ
             int stackCount = dieJiaPower.Amount;
             await DamageCmd.Attack(DynamicVars["DieJiaDamage"].BaseValue)
                 .WithHitCount(stackCount)
-                .FromCard(this)
+                .FromCard(this,cardPlay)
                 .TargetingAllOpponents(base.CombatState)
                 .WithHitVfxNode(NGrandFinaleImpactVfx.Create)
                 .WithHitFx("vfx/vfx_attack_slash")

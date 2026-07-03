@@ -38,7 +38,7 @@ public class SuHuiHaiYuDeYaoLan() : SeleeCard(0, CardType.Attack, CardRarity.Rar
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await DamageCmd.Attack(base.DynamicVars.Damage.BaseValue)
-            .FromCard(this).TargetingAllOpponents(base.CombatState!)
+            .FromCard(this,cardPlay).TargetingAllOpponents(base.CombatState!)
             .WithHitVfxNode(NGrandFinaleImpactVfx.Create)
             .WithHitFx(null, null, "blunt_attack.mp3")
             .Execute(choiceContext);

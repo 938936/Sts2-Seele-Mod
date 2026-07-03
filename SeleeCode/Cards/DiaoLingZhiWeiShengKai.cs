@@ -24,7 +24,7 @@ public class DiaoLingZhiWeiShengKai() : SeleeCard(1, CardType.Power, CardRarity.
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await CreatureCmd.Damage(choiceContext, base.Owner.Creature, DynamicVars["HpLoss"].BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this);
+        await CreatureCmd.Damage(choiceContext, base.Owner.Creature, DynamicVars["HpLoss"].BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this, cardPlay);
         await PowerCmd.Apply<YuHePower>(choiceContext, base.Owner.Creature, DynamicVars["YuHePower"].BaseValue, base.Owner.Creature, this);
         await PowerCmd.Apply<DiaoLingZhiWeiShengKaiPower>(choiceContext, base.Owner.Creature, DynamicVars["DiaoLingZhiWeiShengKaiPower"].BaseValue, base.Owner.Creature, this);
     }
