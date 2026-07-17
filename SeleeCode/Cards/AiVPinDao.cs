@@ -20,7 +20,7 @@ public class AiVPinDao() : SeleeCard(0, CardType.Skill, CardRarity.Uncommon, Tar
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
-        await CreatureCmd.LoseBlock(cardPlay.Target, cardPlay.Target.Block);
+        await CreatureCmd.LoseBlock(choiceContext, cardPlay.Target, cardPlay.Target.Block,Owner.Creature);
         int playerCount = base.CombatState?.Players.Count ?? 1;
         await PowerCmd.Apply<LiangZiTanSuoPower>(choiceContext, cardPlay.Target, playerCount, base.Owner.Creature, this);
     }

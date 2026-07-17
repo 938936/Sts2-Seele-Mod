@@ -35,15 +35,25 @@ public class GanLinHuiXiang() : SeleeCard(0, CardType.Attack, CardRarity.Uncommo
             .Execute(choiceContext);
     }
     
-    protected override (PileType, CardPilePosition) GetResultPileTypeAndPositionForCardPlay()
+    protected override CardLocation GetResultLocationForCardPlay()
     {
-        var (pileType, position) = base.GetResultPileTypeAndPositionForCardPlay();
-        if (pileType == PileType.Discard && HasGongMing)
+        CardLocation resultLocationForCardPlay = base.GetResultLocationForCardPlay();
+        if (resultLocationForCardPlay.pileType == PileType.Discard  && HasGongMing)
         {
-            return (PileType.Hand, position);
+            resultLocationForCardPlay.pileType = PileType.Hand;
         }
-        return (pileType, position);
+        return resultLocationForCardPlay;
     }
+    
+    // protected override (PileType, CardPilePosition) GetResultPileTypeAndPositionForCardPlay()
+    // {
+    //     var (pileType, position) = base.GetResultPileTypeAndPositionForCardPlay();
+    //     if (pileType == PileType.Discard && HasGongMing)
+    //     {
+    //         return (PileType.Hand, position);
+    //     }
+    //     return (pileType, position);
+    // }
 
     protected override void OnUpgrade()
     {
