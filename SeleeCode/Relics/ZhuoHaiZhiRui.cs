@@ -24,8 +24,7 @@ public class ZhuoHaiZhiRui() : SeleeRelic
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
         [HoverTipFactory.FromPower<LiangZiDieJiaPower>()];
-
-    [SavedProperty]
+    
     public int TurnCounter => Owner.PlayerCombatState?.TurnNumber ?? 0;
 
     public override bool ShowCounter => CombatManager.Instance.IsInProgress;
