@@ -60,6 +60,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Content Include=".opencode\scripts\read_design_doc.py" />
+      <Content Include=".opencode\skills\ka-pai-kai-fa\SKILL.md" />
+      <Content Include=".opencode\skills\kai-fa-jing-yan-ji-lu\SKILL.md" />
+      <Content Include=".opencode\skills\neng-li-kai-fa\SKILL.md" />
+      <Content Include=".opencode\skills\yi-wu-kai-fa\SKILL.md" />
       <Content Include="AGENTS.md" />
       <Content Include="docs\开发经验.md" />
       <Content Include="docs\设计文档.xlsx" />
