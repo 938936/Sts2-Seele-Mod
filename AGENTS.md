@@ -63,7 +63,7 @@ docs/
 
 ## External References
 
-- Game source (read-only): `C:\Users\joyce\Documents\sts_mods\sts2_src\src\Core\Models\` — reference for how vanilla cards/powers/relics work
-- Game localization: `C:\Users\joyce\Documents\sts_mods\sts2_src\localization\zhs\` — find vanilla entity names by description
-- BaseLib source: `C:\Users\joyce\Documents\sts_mods\sts2_lib\BaseLib-StS2-master\` — mod API implementations
+- Game source (read-only): `%USERPROFILE%\Documents\sts_mods\sts2_src\src\Core\Models\` — reference for how vanilla cards/powers/relics work
+- Game localization: `%USERPROFILE%\Documents\sts_mods\sts2_src\localization\zhs\` — find vanilla entity names by description
+- BaseLib source: `%USERPROFILE%\Documents\sts_mods\sts2_lib\BaseLib-StS2\` — mod API implementations
 - When implementing unknown effects: check `docs/开发经验.md` first, then vanilla code

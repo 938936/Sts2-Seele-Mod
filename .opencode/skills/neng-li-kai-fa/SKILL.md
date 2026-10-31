@@ -208,9 +208,9 @@ python .opencode/scripts/read_design_doc.py 能力 {能力名称}
 
 1. **查阅开发经验**：打开 `docs/开发经验.md`，搜索是否有与目标效果相关的经验记录
 
-2. **查找原版能力描述**：打开 `C:\Users\joyce\Documents\sts_mods\sts2_src\localization\zhs\powers.json`，搜索与目标效果相关的描述，并找到对应的原版能力名称
+2. **查找原版能力描述**：打开 `%USERPROFILE%\Documents\sts_mods\sts2_src\localization\zhs\powers.json`，搜索与目标效果相关的描述，并找到对应的原版能力名称
 
-3. **找到对应代码文件**：根据能力名称转为驼峰命名，在 `C:\Users\joyce\Documents\sts_mods\sts2_src\src\Core\Models\Powers` 目录下查找对应的 `.cs` 文件
+3. **找到对应代码文件**：根据能力名称转为驼峰命名，在 `%USERPROFILE%\Documents\sts_mods\sts2_src\src\Core\Models\Powers` 目录下查找对应的 `.cs` 文件
    - 例如：`DEXTERITY_POWER` → `DexterityPower.cs`
    - 例如：`BLUR_POWER` → `BlurPower.cs`
 
@@ -589,9 +589,9 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 ### 常用引用
 
-- Baselib库，该库封装了许多杀戮尖塔2的mod api，源码可查看`C:\Users\joyce\Documents\sts_mods\sts2_lib\BaseLib-StS2-master`目录
+- Baselib库，该库封装了许多杀戮尖塔2的mod api，源码可查看`%USERPROFILE%\Documents\sts_mods\sts2_lib\BaseLib-StS2`目录
   - 子目录`Abstracts`下可找到能力基类`CustomPowerModel`的实现，其派生自原版代码的`PowerModel`类
 - [Baselib官方文档](https://alchyr.github.io/BaseLib-Wiki/docs/Features.html)
 - SeleePower基类源码：`SeleeCode/Powers/SeleePower.cs`
-- 原版能力代码目录：`C:\Users\joyce\Documents\sts_mods\sts2_src\src\Core\Models\Powers`
-- 原版PowerModel基类源码：`C:\Users\joyce\Documents\sts_mods\sts2_src\src\Core\Models\PowerModel.cs`
+- 原版能力代码目录：`%USERPROFILE%\Documents\sts_mods\sts2_src\src\Core\Models\Powers`
+- 原版PowerModel基类源码：`%USERPROFILE%\Documents\sts_mods\sts2_src\src\Core\Models\PowerModel.cs`

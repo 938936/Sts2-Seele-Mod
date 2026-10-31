@@ -14,9 +14,10 @@ description: 创建、修改Selee角色mod专属卡牌，添加卡牌到对应�
 3. [添加本地化文本](#3-添加本地化文本)
 4. [实现卡牌效果](#4-实现卡牌效果)
 5. [其它内容](#5-其它内容)
-6. [创建能力](#6-新增能力power状态效果)
+6. [新增能力（Power,状态效果）](#6-新增能力power状态效果)
 7. [修改卡牌注意事项](#7-修改卡牌注意事项)
-8. [其它引用](#8-其它引用)
+8. [根据设计文档开发](#8-根据设计文档开发)
+9. [其它引用](#9-其它引用)
 
 所有代码操作默认在 `SeleeCode/` 目录下进行。
 
@@ -190,9 +191,9 @@ public class _TemplateCard(): SeleeCard(1, CardType.Attack, CardRarity.Uncommon,
 
 1. **查阅开发经验**：打开 `docs/开发经验.md`，搜索是否有与目标效果相关的经验记录
 
-2. **查找原版卡牌描述**：打开 `C:\Users\joyce\Documents\sts_mods\sts2_src\localization\zhs\cards.json`，搜索与目标效果相关的描述，并找到对应的原版卡牌名称
+2. **查找原版卡牌描述**：打开 `%USERPROFILE%\Documents\sts_mods\sts2_src\localization\zhs\cards.json`，搜索与目标效果相关的描述，并找到对应的原版卡牌名称
 
-3. **找到对应代码文件**：根据卡牌名称转为驼峰命名，在 `C:\Users\joyce\Documents\sts_mods\sts2_src\src\Core\Models\Cards` 目录下查找对应的 `.cs` 文件
+3. **找到对应代码文件**：根据卡牌名称转为驼峰命名，在 `%USERPROFILE%\Documents\sts_mods\sts2_src\src\Core\Models\Cards` 目录下查找对应的 `.cs` 文件
    - 例如：`STRIKE_DEFECT` → `StrikeDefect.cs`
 
 4. **参考实现**：阅读原版卡牌的代码 ，参考以下内容：
@@ -406,7 +407,6 @@ await CommonActions.Apply<SomePower>(cardPlay.Target, this, DynamicVars["VarName
 读取设计数据后，按照上述步骤1-6实现卡牌。
 
 ## 9. 其它引用
-- Baselib库，该库封装了许多杀戮尖塔2的mod api，源码可查看`C:\Users\joyce\Documents\sts_mods\sts2_lib\BaseLib-StS2-master`目录。   
+- Baselib库，该库封装了许多杀戮尖塔2的mod api，源码可查看`%USERPROFILE%\Documents\sts_mods\sts2_lib\BaseLib-StS2`目录。   
   子目录`Abstracts`下可找到卡牌基类`CustomCardModel`的实现，其派生自原版代码的`CardModel`类
 - [Baselib官方文档](https://alchyr.github.io/BaseLib-Wiki/docs/Features.html)
-- SeleeCard基类源码：`SeleeCode/Cards/SeleeCard.cs`

@@ -135,9 +135,9 @@ public class _TemplateRelic() : SeleeRelic
 
 1. **查阅开发经验**：打开 `docs/开发经验.md`，搜索是否有与目标效果相关的经验记录
 
-2. **查找原版遗物描述**：打开 `C:\Users\joyce\Documents\sts_mods\sts2_src\localization\zhs\relics.json`，搜索与目标效果相关的描述，并找到对应的原版遗物名称
+2. **查找原版遗物描述**：打开 `%USERPROFILE%\Documents\sts_mods\sts2_src\localization\zhs\relics.json`，搜索与目标效果相关的描述，并找到对应的原版遗物名称
 
-3. **找到对应代码文件**：根据遗物名称转为驼峰命名，在 `C:\Users\joyce\Documents\sts_mods\sts2_src\src\Core\Models\Relics` 目录下查找对应的 `.cs` 文件
+3. **找到对应代码文件**：根据遗物名称转为驼峰命名，在 `%USERPROFILE%\Documents\sts_mods\sts2_src\src\Core\Models\Relics` 目录下查找对应的 `.cs` 文件
    - 例如：`AKABEKO` → `Akabeko.cs`
 
 4. **参考实现**：阅读原版遗物的代码，参考以下内容：
@@ -481,7 +481,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 
 ### 其它引用
 
-- Baselib库，该库封装了许多杀戮尖塔2的mod api，源码可查看`C:\Users\joyce\Documents\sts_mods\sts2_lib\BaseLib-StS2-master`目录
+- Baselib库，该库封装了许多杀戮尖塔2的mod api，源码可查看`%USERPROFILE%\Documents\sts_mods\sts2_lib\BaseLib-StS2`目录
 - BaseLib遗物开发文档：https://alchyr.github.io/BaseLib-Wiki/docs/models/custom-relic.html
 - SeleeRelic基类源码：`SeleeCode/Relics/SeleeRelic.cs`
-- 原版遗物代码目录：`C:\Users\joyce\Documents\sts_mods\sts2_src\src\Core\Models\Relics`
+- 原版遗物代码目录：`%USERPROFILE%\Documents\sts_mods\sts2_src\src\Core\Models\Relics`
